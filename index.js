@@ -184,8 +184,10 @@ function lowerCaseStrings(strings) {
  *
  * [2] Invoking `isItAnApple` with `['a', 'b', 'c' ]` will return `[ false, false, false ]`.
  */
-function isItAnApple(/* code here */) {
+function isItAnApple(strings) {
   /* code here */
+  // const mappedFruit = strings.map("apple" ? true : false);
+  // return mappedFruit;
 }
 
 /**
@@ -242,8 +244,13 @@ function stringSmash(/* code here */) {
  * @returns an array with all the runners' full names in the following format: "Smith, John".
  * The full names appear in the array in the same order the runners appear in the `runners` array.
  */
-function getFullNames(/* CODE HERE */) {
+function getFullNames(runners) {
   /* CODE HERE */
+  const lastNameFirst = [];
+  runners.forEach((list) =>
+    lastNameFirst.push(`${list.last_name}, ${list.first_name}`)
+  );
+  return lastNameFirst;
 }
 
 /**
