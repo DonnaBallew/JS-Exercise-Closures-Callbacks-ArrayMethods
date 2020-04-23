@@ -137,8 +137,10 @@ function processProduct(num1, num2, callback) {
  * [2] Invoking `processDuplicateFree` passing `[1,1,2,2,3]` and `(arr) => arr.length`,
  * should return 3.
  */
-function processDuplicateFree(/* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */) {
+function processDuplicateFree(list, callback) {
   /* CODE HERE ONLY AFTER COMPLETING ALL OTHER TASKS */
+  let newArr = [...new Set(list)]; // found at wsvincent.com/javascript-remove-duplicates-array
+  return callback(newArr);
 }
 
 /////////////// HIGHER-ORDER ARRAY METHODS ///////////////
@@ -234,8 +236,9 @@ function removeApple(strings) {
  *
  * [2] Invoking `stringSmash` with `['a', 'b', 'c' ]` will return `abc`.
  */
-function stringSmash(/* code here */) {
+function stringSmash(strings) {
   /* code here */
+  return strings.reduce((accumulator, smash) => accumulator + smash); // found resource at https://www.telerik.com/blogs/functional-programming-with-javascript-object-arrays
 }
 
 // A local community center is holding a fund raising 5k fun run and has invited
