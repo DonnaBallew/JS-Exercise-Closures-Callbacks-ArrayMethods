@@ -339,10 +339,12 @@ function tallyUpDonations(runners) {
  * Study the code for counter1 and counter2. Answer the questions below.
  *
  * 1. What is the difference between counter1 and counter2?
+ * Regarding Counter1, the context is found on the local scope and regarding Counter2, it looks outside the local scope to find the variable needed to complete the block of code.
  *
- * 2. Which of the two uses a closure? How can you tell?
+ * 2. Which of the two uses a closure? How can you tell? Counter 1 and Counter2 are both closures; because they have to access a variable outside the function.
  *
- * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better?
+ * 3. In what scenario would the counter1 code be preferable? In what scenario would counter2 be better? The scenario for Counter1 would be preferable if you do not need to use the variable
+ * for any other function.  The scenario for Counter2 would be best used for situations where the variable would be used by other functions.
  *
  */
 
