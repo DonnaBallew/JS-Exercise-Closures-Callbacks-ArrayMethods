@@ -186,8 +186,13 @@ function lowerCaseStrings(strings) {
  */
 function isItAnApple(strings) {
   /* code here */
-  // const mappedFruit = strings.map("apple" ? true : false);
-  // return mappedFruit;
+  return strings.map((item) => {
+    if (item === "apple") {
+      return true;
+    } else {
+      return false;
+    }
+  });
 }
 
 /**
